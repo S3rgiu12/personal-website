@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website for showcasing projects and skills.">
+    <meta name="keywords" content="Web Design, fullstack developer, portfolio, web development">
+    <meta name="author" content="">
+    <title>Pagina de prezentare si contactare</title>
+    <link rel="stylesheet" href="stylecon.css">
+    <style>
+        body {
+    background-image: url('data:image/jpeg;base64,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');
+    background-size: cover; /* Acoperă întreaga pagină */
+    background-position: center; /* Poziționează fundalul în centru */
+    background-attachment: fixed; /* Fundalul rămâne fix când derulezi pagina */
+    font-family: Arial, sans-serif; /* Stil pentru text */
+}
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #150127; 
+    padding: 15px;
+    }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .btn {
+            color: white;
+            text-decoration: none;
+        }
+
+        .language-selector {
+            display: flex;
+            align-items: center;
+        }
+
+        .flag-icon {
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+      }
+
+        .profile-picture {
+            display: block;
+            margin: 20px auto;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .personal-info {
+            text-align: center;
+            margin-top: 20px;
+            color: aliceblue;
+        }
+
+        .personal-info ul {
+            list-style-type: disc;
+            padding-left: 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .personal-info li {
+            margin-bottom: 10px;
+        }
+
+        .additional-info {
+            margin-top: 20px;
+            text-align: left;
+            color: aliceblue;
+        }
+
+         /* Stil pentru alineat */
+         .indented-paragraph {
+            text-indent: 30px; /* Indentare de 30px pentru primul rând */
+            margin-bottom: 20px; /* Spațiu între paragrafe */
+        }
+
+        footer {
+            background-color: #150127;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        .description-title {
+            font-size: 1.5em; /* Puțin mai mare */
+            font-weight: bold; /* Bold */
+            text-decoration: underline; /* Subliniat */
+        }
+    </style>
+</head>
+<body>
+    <!-- Bara de stare -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3m9gLXcc11oo3n4LZK3qZJrWbTMGbx5DoHA&s" alt="Logo" width="50">
+        </div>
+        <ul class="nav-links">
+            <li><a class="btn" href="website.html">Home</a></li>
+            <li><a class="btn" href="login.html">Log in</a></li>
+            <li><a class="btn" href="register.html">Register</a></li>
+        </ul>
+        <!-- Language selector in navbar -->
+        <div class="language-selector">
+            <img src="https://flagcdn.com/w20/gb.png" alt="English" class="flag-icon" onclick="setLanguage('en')">
+            <img src="https://flagcdn.com/w20/ro.png" alt="Romanian" class="flag-icon" onclick="setLanguage('ro')">
+        </div>
+    </nav>
+
+    <header>
+        <h1 id="welcome-text">Descriere Personala</h1>
+        <p id="intro-text">Iti pun la dispozitie un CV cu descrierea mea</p>
+    </header>
+    
+    <!-- Poza de profil -->
+    <img src="Poza CV.png" alt="Profil Dumitrasc Sergiu-Emilian" class="profile-picture">
+
+    <!-- Informatii personale -->
+    <div class="personal-info">
+        <ul>
+            <li id="name">Nume:</li>
+            <li id="email">Email: </li>
+            <li id="phone">Telefon: </li>
+            <li id="address">Adresa: </li>
+            <li id="occupation">Ocupatie: </li>
+        </ul>
+    </div>
+
+    <!-- Div cu paragraf -->
+    <div class="additional-info">
+        <h1 class="description-title">Descriere detaliată</h1>
+        <p id="additional-paragraph" class="text-gray-700 mb-8 indented-paragraph"> Numele meu este , am de ani si sunt  . Scopul meu este  . Daca vrei sa colaboram si  vrei sa ai acces la mai multe detalii, le gasesti pe site in sectiunea "Services".</p>
+    </div>
+
+      <!-- Footer -->
+      <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2024 All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                welcomeText: "Personal Description",
+                introText: "I provide you with a CV that describes me",
+                name: "Name: Dumitrasc Sergiu-Emilian",
+                email: "Email: sergiudumitrasc@gmail.com",
+                phone: "Phone: +40 752531883",
+                address: "Address: Str. Targoviste, Nr. 4, Braila, Romania",
+                occupation: "Occupation: Recent graduate / Future Freelancer Fullstack Developer",
+                additionalParagraph: "Detailed description: My name is Dumitrasc Sergiu-Emilian, I am 23 years old and I recently graduated from the Faculty of Automation, Computers, Electrical and Electronics Engineering at the University 'Dunarea de Jos' Galati. My goal is to become a successful fullstack developer and contribute to the creation of innovative software solutions. If you want to collaborate and you want to have access to more details, you can find them on the website in the 'Services' section."
+            },
+            ro: {
+                welcomeText: "Descriere Personala",
+                introText: "Iti pun la dispozitie un CV cu descrierea mea",
+                name: "Nume: Dumitrasc Sergiu-Emilian",
+                email: "Email: sergiudumitrasc@gmail.com",
+                phone: "Telefon: +40 752531883",
+                address: "Adresa: Str. Targoviste, Nr. 4, Braila, Romania",
+                occupation: "Ocupatie: Proaspat absolvent/ Freelancer viitor Fullstack Developer",
+                additionalParagraph: "Descriere detaliata: Numele meu este Dumitrasc Sergiu-Emilian, am 23 de ani si sunt proaspat absolvent al facultatii Automatica, Calculatoare, Inginerie Electrica si Electronica din cadrul Universitatii 'Dunarea de Jos' Galati. Scopul meu este să devin un dezvoltator fullstack de succes și să contribui la crearea de soluții software inovatoare. Daca vrei sa colaboram si  vrei sa ai acces la mai multe detalii, le gasesti pe site in sectiunea Services."
+            }
+        };
+
+        function setLanguage(lang) {
+            document.getElementById('welcome-text').innerText = translations[lang].welcomeText;
+            document.getElementById('intro-text').innerText = translations[lang].introText;
+            document.getElementById('name').innerText = translations[lang].name;
+            document.getElementById('email').innerText = translations[lang].email;
+            document.getElementById('phone').innerText = translations[lang].phone;
+            document.getElementById('address').innerText = translations[lang].address;
+            document.getElementById('occupation').innerText = translations[lang].occupation;
+            document.getElementById('additional-paragraph').innerText = translations[lang].additionalParagraph;
+        }
+    </script>
+
+</body>
+</html>

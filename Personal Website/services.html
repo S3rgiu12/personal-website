@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website for showcasing projects and skills.">
+    <meta name="keywords" content="Web Design, fullstack developer, portfolio, web development">
+    <meta name="author" content="Dumitrasc Sergiu-Emilian">
+    <title>My Services/ Serviciile Mele - Dumitrasc Sergiu-Emilian</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+    <style>
+        /* Personal CSS adjustments if needed */
+        .flag-icon {
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Bara de navigație -->
+    <nav class="bg-gray-900 text-white p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3m9gLXcc11oo3n4LZK3qZJrWbTMGbx5DoHA&s" alt="Logo" class="w-10">
+        </div>
+        <ul class="flex space-x-6">
+            <li><a class="text-white hover:text-gray-300" href="website.html" id="home-btn">Home</a></li>
+            <li><a class="text-white hover:text-gray-300" href="contact.html" id="contact-btn">Contact</a></li>
+            <li><a class="text-white hover:text-gray-300" href="register.html" id="register-btn">Register</a></li>
+        </ul>
+        <!-- Selector de limbă cu steaguri -->
+        <div class="flex items-center">
+            <img src="https://flagcdn.com/w20/gb.png" alt="English" class="flag-icon" data-lang="en">
+            <img src="https://flagcdn.com/w20/ro.png" alt="Romanian" class="flag-icon" data-lang="ro">
+        </div>
+    </nav>
+
+    <!-- Secțiune de introducere -->
+    <header class="bg-blue-600 text-white text-center py-16">
+        <h1 class="text-4xl font-bold" id="services-title">My Services</h1>
+        <p class="mt-4 text-lg" id="services-intro">Explore the range of web development services I offer, from Java to Python.</p>
+    </header>
+
+    <!-- Secțiunea de servicii -->
+    <section class="py-16 bg-white">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold" id="services-heading">What I Offer</h2>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card Java -->
+            <div class="bg-gray-100 shadow-md rounded-lg p-6 hover:shadow-lg transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold" id="java-title">Java Development - Course</h3>
+                <p class="mt-2 text-gray-700" id="java-desc">With a solid foundation in Java, I develop robust and scalable backend applications, implementing OOP principles, working with frameworks such as Spring Boot, and delivering high-quality software.</p>
+                <a href="java.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">View Course</a>
+            </div>
+
+            <!-- Card HTML & CSS -->
+            <div class="bg-gray-100 shadow-md rounded-lg p-6 hover:shadow-lg transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold" id="html-css-title">Frontend: HTML & CSS - Course</h3>
+                <p class="mt-2 text-gray-700" id="html-css-desc">Experienced in crafting visually appealing and responsive websites using HTML5, CSS3, and modern design trends. I ensure your website is accessible, fast, and easy to navigate on any device.</p>
+                <a href="frontend.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">View Course</a>
+            </div>
+
+            <!-- Card Python -->
+            <div class="bg-gray-100 shadow-md rounded-lg p-6 hover:shadow-lg transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold" id="python-title">Introduction to Python - Course</h3>
+                <p class="mt-2 text-gray-700" id="python-desc">Python is an incredibly versatile language. I offer introductory Python services, covering the basics and how it can be used for scripting, web development, data analysis, and more.</p>
+                <a href="python.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">View Course</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2024 Dumitrasc Sergiu-Emilian. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script pentru traduceri -->
+    <script>
+        // Traduceri pentru engleză și română
+        const translations = {
+            en: {
+                homeBtn: "Home",
+                contactBtn: "Contact",
+                registerBtn: "Register",
+                servicesTitle: "My Services",
+                servicesIntro: "Explore the range of web development services I offer, from Java to Python.",
+                servicesHeading: "What I Offer",
+                javaTitle: "Java Development - Course",
+                javaDesc: "With a solid foundation in Java, I develop robust and scalable backend applications, implementing OOP principles, working with frameworks such as Spring Boot, and delivering high-quality software.",
+                htmlCssTitle: "Frontend: HTML & CSS - Course",
+                htmlCssDesc: "Experienced in crafting visually appealing and responsive websites using HTML5, CSS3, and modern design trends. I ensure your website is accessible, fast, and easy to navigate on any device.",
+                pythonTitle: "Introduction to Python - Course",
+                pythonDesc: "Python is an incredibly versatile language. I offer introductory Python services, covering the basics and how it can be used for scripting, web development, data analysis, and more."
+            },
+            ro: {
+                homeBtn: "Acasa",
+                contactBtn: "Contact",
+                registerBtn: "Înregistrare",
+                servicesTitle: "Serviciile Mele",
+                servicesIntro: "Explorează gama de servicii de dezvoltare web pe care le ofer, de la Java la Python.",
+                servicesHeading: "Ce Ofer",
+                javaTitle: "Dezvoltare Java - Curs",
+                javaDesc: "Cu o bază solidă în Java, dezvolt aplicații backend robuste și scalabile, implementând principii OOP, lucrând cu framework-uri precum Spring Boot și livrând software de înaltă calitate.",
+                htmlCssTitle: "Frontend: HTML & CSS - Curs",
+                htmlCssDesc: "Experimentat în realizarea de site-uri web atrăgătoare și responsive, utilizând HTML5, CSS3 și tendințele moderne de design. Asigur că site-ul tău este accesibil, rapid și ușor de navigat pe orice dispozitiv.",
+                pythonTitle: "Introducere în Python - Curs",
+                pythonDesc: "Python este un limbaj incredibil de versatil. Ofer servicii introductive în Python, acoperind elementele de bază și modul în care poate fi utilizat pentru scripting, dezvoltare web, analiză de date și multe altele."
+            }
+        };
+
+        // Steagurile pentru schimbarea limbii
+        const flags = document.querySelectorAll('.flag-icon');
+        flags.forEach(flag => {
+            flag.addEventListener('click', (e) => {
+                const lang = e.target.getAttribute('data-lang');
+                translatePage(lang);
+            });
+        });
+
+        // Funcția de traducere
+        function translatePage(lang) {
+            document.getElementById('home-btn').textContent = translations[lang].homeBtn;
+            document.getElementById('contact-btn').textContent = translations[lang].contactBtn;
+            document.getElementById('register-btn').textContent = translations[lang].registerBtn;
+            document.getElementById('services-title').textContent = translations[lang].servicesTitle;
+            document.getElementById('services-intro').textContent = translations[lang].servicesIntro;
+            document.getElementById('services-heading').textContent = translations[lang].servicesHeading;
+            document.getElementById('java-title').textContent = translations[lang].javaTitle;
+            document.getElementById('java-desc').textContent = translations[lang].javaDesc;
+            document.getElementById('html-css-title').textContent = translations[lang].htmlCssTitle;
+            document.getElementById('html-css-desc').textContent = translations[lang].htmlCssDesc;
+            document.getElementById('python-title').textContent = translations[lang].pythonTitle;
+            document.getElementById('python-desc').textContent = translations[lang].pythonDesc;
+        }
+    </script>
+</body>
+</html>

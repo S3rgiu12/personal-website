@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Python Development Documentation ">
+    <meta name="author" content="">
+    <title>Python Development </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        .flag-icon {
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        /* Stil pentru alineat */
+        .indented-paragraph {
+            text-indent: 30px; /* Indentare de 30px pentru primul rând */
+            margin-bottom: 20px; /* Spațiu între paragrafe */
+        }
+
+        /* Stil pentru cod */
+        .code-block {
+            background-color: #f3f3f3;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Bara de navigație -->
+    <nav class="bg-gray-900 text-white p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3m9gLXcc11oo3n4LZK3qZJrWbTMGbx5DoHA&s" alt="Logo" class="w-10">
+        </div>
+        <ul class="flex space-x-6 justify-center flex-1">
+            <li><a id="back-btn" class="text-white hover:text-gray-300" href="services.html">Back</a></li>
+            <li><a id="contact-btn" class="text-white hover:text-gray-300" href="contact.html">Contact</a></li>
+            <li><a id="register-btn" class="text-white hover:text-gray-300" href="register.html">Register</a></li>
+        </ul>
+        <div class="flex items-center">
+            <img src="https://flagcdn.com/w20/gb.png" alt="English" class="flag-icon" data-lang="en">
+            <img src="https://flagcdn.com/w20/ro.png" alt="Romanian" class="flag-icon" data-lang="ro">
+        </div>
+    </nav>
+
+    <!-- Secțiune de prezentare -->
+    <section class="bg-blue-600 text-white text-center py-16">
+        <h1 id="services-title" class="text-4xl font-bold">Python Development</h1>
+        <p id="services-intro" class="mt-4 text-lg">Understand Python's role in AI, chatbots, and data analysis.</p>
+    </section>
+
+    <!-- Secțiune conținut Python -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-left">
+            <h2 id="services-heading" class="text-2xl font-bold mb-6">1) Why Python in AI and Data Analysis?</h2>
+            <p id="python-desc" class="text-gray-700 mb-8 indented-paragraph">
+                Python is widely used in AI development due to its simplicity, extensive libraries, and flexibility in handling data. 
+                It allows developers to train chatbots using machine learning models and provides tools for analyzing large data sets efficiently. 
+                Its contribution to the development of AI and natural language processing is unmatched, making it an essential tool for automating tasks and processing information. Whether for building intelligent systems or performing data-driven analyses, Python stands out as a reliable and powerful language.
+            </p>
+
+            <!-- Paragraf suplimentar -->
+            <h2 id="services-heading 2" class="text-2xl font-bold mb-6">2) Simple neural network model that contains the TensorFlow library and its high-level API, Keras</h2>
+            <p id="python-ai-usage" class="text-gray-700 mb-8 indented-paragraph">
+                One of the key areas where Python shines is in the development of deep learning models used for AI tasks. 
+                Libraries such as TensorFlow and PyTorch make it easier to create neural networks that can learn and adapt based on vast amounts of data. 
+                With just a few lines of Python code, a developer can build, train, and deploy an AI model capable of image recognition, natural language processing, or predictive analytics.
+            </p>
+
+            <!-- Exemplu de cod -->
+            <div class="code-block">
+                <pre><code>
+import tensorflow as tf
+from tensorflow.keras import layers
+
+# Crearea unui model simplu de rețea neurală
+model = tf.keras.Sequential([
+    layers.Dense(64, activation='relu', input_shape=(784,)),
+    layers.Dense(10, activation='softmax')
+])
+
+# Compilarea modelului
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+# Antrenarea modelului cu datele
+model.fit(train_data, train_labels, epochs=5)
+                </code></pre>
+            </div>
+
+            <!-- Explicații pe puncte -->
+            <ul id="code-explanation" class="list-disc pl-6 text-gray-700 mb-8">
+                <li><strong>tf.keras.Sequential</strong> - Creates a sequential model where the output of one layer becomes the input for the next.</li>
+                <li><strong>layers.Dense</strong> - Adds a fully connected layer to the neural network, with 64 neurons in the first layer and 10 in the second.</li>
+                <li><strong>activation='relu'</strong> -  Uses the ReLU activation function to determine if a neuron is "activated"</li>
+                <li><strong>optimizer='adam'</strong> - Specifies the Adam optimizer, which adjusts the model parameters to minimize the error.</li>
+                <li><strong>model.fit</strong> - Trains the model based on input data and labels for a total of 5 epochs (iterations).</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2024 All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script pentru traduceri -->
+    <script>
+        const translations = {
+            en: {
+                backBtn: "Back",
+                contactBtn: "Contact",
+                registerBtn: "Register",
+                servicesTitle: "Python Development",
+                servicesIntro: "Understand Python's role in AI, chatbots, and data analysis.",
+                servicesHeading: "Why Python in AI and Data Analysis?",
+                pythonDesc: "Python is widely used in AI development due to its simplicity, extensive libraries, and flexibility in handling data. It allows developers to train chatbots using machine learning models and provides tools for analyzing large data sets efficiently. Its contribution to the development of AI and natural language processing is unmatched, making it an essential tool for automating tasks and processing information. Whether for building intelligent systems or performing data-driven analyses, Python stands out as a reliable and powerful language.",
+                pythonAi: "One of the key areas where Python shines is in the development of deep learning models used for AI tasks. Libraries such as TensorFlow and PyTorch make it easier to create neural networks that can learn and adapt based on vast amounts of data. With just a few lines of Python code, a developer can build, train, and deploy an AI model capable of image recognition, natural language processing, or predictive analytics.",
+                codeExplanation: [
+                    "tf.keras.Sequential - Creates a sequential model where the output of one layer becomes the input for the next.",
+                    "layers.Dense - Adds a fully connected layer to the neural network, with 64 neurons in the first layer and 10 in the second.",
+                    "activation='relu' - Uses the ReLU activation function to determine if a neuron is \"activated\".",
+                    "optimizer='adam' - Specifies the Adam optimizer, which adjusts the model parameters to minimize the error.",
+                    "model.fit - Trains the model based on input data and labels for a total of 5 epochs (iterations)."
+                ]
+            },
+            ro: {
+                backBtn: "Înapoi",
+                contactBtn: "Contact",
+                registerBtn: "Înregistrare",
+                servicesTitle: "Dezvoltare Python",
+                servicesIntro: "Înțelege rolul Python în AI, chatbots și analiza datelor.",
+                servicesHeading: "De ce Python în AI și Analiza Datelor?",
+                pythonDesc: "Python este utilizat pe scară largă în dezvoltarea AI datorită simplității, bibliotecilor extinse și flexibilității sale în manipularea datelor. Permite dezvoltatorilor să antreneze chatbots folosind modele de machine learning și oferă instrumente pentru analiza eficientă a seturilor mari de date. Contribuția sa la dezvoltarea AI și a procesării limbajului natural este de neegalat, făcându-l un instrument esențial pentru automatizarea sarcinilor și procesarea informațiilor. Fie că este vorba de construirea de sisteme inteligente sau de efectuarea de analize bazate pe date, Python se remarcă drept un limbaj fiabil și puternic.",
+                pythonAi: "Unul dintre domeniile cheie în care Python strălucește este dezvoltarea modelelor de învățare profundă utilizate pentru sarcinile AI. Bibliotecile precum TensorFlow și PyTorch facilitează crearea de rețele neuronale care se pot învăța și se pot adapta pe baza unor cantități mari de date. Cu doar câteva linii de cod Python, un dezvoltator poate construi, antrena și implementa un model AI capabil de recunoaștere a imaginilor, procesare a limbajului natural sau analiză predictivă.",
+                codeExplanation: [
+                    "tf.keras.Sequential - Creează un model secvențial de straturi (layers) în care ieșirea unui strat devine intrarea următorului.",
+                    "layers.Dense - Adaugă un strat complet conectat (fully connected layer) la rețeaua neurală, cu 64 de neuroni în primul strat și 10 în al doilea.",
+                    "activation='relu' - Folosește funcția de activare ReLU pentru a decide dacă un neuron este \"activat\".",
+                    "optimizer='adam' - Specifică optimizatorul \"Adam\", care ajustează parametrii modelului pentru a minimiza eroarea.",
+                    "model.fit - Antrenează modelul pe baza datelor de intrare și etichete pentru un număr de 5 epoci (iterări)."
+                ]
+            }
+        };
+
+        const flags = document.querySelectorAll('.flag-icon');
+        flags.forEach(flag => {
+            flag.addEventListener('click', (e) => {
+                const lang = e.target.getAttribute('data-lang');
+                translatePage(lang);
+            });
+        });
+
+        function translatePage(lang) {
+            document.getElementById('back-btn').textContent = translations[lang].backBtn;
+            document.getElementById('contact-btn').textContent = translations[lang].contactBtn;
+            document.getElementById('register-btn').textContent = translations[lang].registerBtn;
+            document.getElementById('services-title').textContent = translations[lang].servicesTitle;
+            document.getElementById('services-intro').textContent = translations[lang].servicesIntro;
+            document.getElementById('services-heading').textContent = translations[lang].servicesHeading;
+            document.getElementById('python-desc').textContent = translations[lang].pythonDesc;
+            document.getElementById('python-ai-usage').textContent = translations[lang].pythonAi;
+            
+            // Traducerea explicațiilor codului
+            const explanationItems = document.getElementById('code-explanation').getElementsByTagName('li');
+            const codeExplanation = translations[lang].codeExplanation;
+            for (let i = 0; i < explanationItems.length; i++) {
+                explanationItems[i].textContent = codeExplanation[i];
+            }
+        }
+    </script>
+</body>
+</html>
+

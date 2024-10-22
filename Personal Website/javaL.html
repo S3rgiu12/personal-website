@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Java Development Documentation">
+    <meta name="author" content="">
+    <title>Java Development</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        .flag-icon {
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .indented-paragraph {
+            text-indent: 30px;
+            margin-bottom: 20px;
+        }
+
+        .code-block {
+            background-color: #f3f3f3;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Bara de navigație -->
+    <nav class="bg-gray-900 text-white p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3m9gLXcc11oo3n4LZK3qZJrWbTMGbx5DoHA&s" alt="Logo" class="w-10">
+        </div>
+        <ul class="flex space-x-6 justify-center flex-1">
+            <li><a id="back-btn" class="text-white hover:text-gray-300" href="services.html">Back</a></li>
+            <li><a id="contact-btn" class="text-white hover:text-gray-300" href="contact.html">Contact</a></li>
+            <li><a id="register-btn" class="text-white hover:text-gray-300" href="register.html">Register</a></li>
+        </ul>
+        <div class="flex items-center">
+            <img src="https://flagcdn.com/w20/gb.png" alt="English" class="flag-icon" data-lang="en">
+            <img src="https://flagcdn.com/w20/ro.png" alt="Romanian" class="flag-icon" data-lang="ro">
+        </div>
+    </nav>
+
+    <!-- Secțiune de prezentare - cu titlul roșu -->
+    <section class="bg-red-600 text-white text-center py-16">
+        <h1 id="services-title" class="text-4xl font-bold">Java Development</h1>
+        <p id="services-intro" class="mt-4 text-lg">Learn about Java's role in web development and enterprise applications.</p>
+    </section>
+
+    <!-- Secțiune conținut Java -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-left">
+            <h2 id="services-heading" class="text-2xl font-bold mb-6">1) Why Java for Web Development?</h2>
+            <p id="frontend-desc" class="text-gray-700 mb-8 indented-paragraph">
+                Java is one of the most popular programming languages for web development due to its stability, scalability, and compatibility across platforms. Java powers large-scale enterprise applications, supporting complex business logic and a high number of transactions. With frameworks like Spring and Hibernate, developers can build secure and high-performing web applications that meet the needs of both small and large companies.
+            </p>
+
+            <!-- Paragraf suplimentar -->
+            <h2 id="frontend-usage" class="text-2xl font-bold mb-6">2) Simple Java Program Using Spring Boot</h2>
+            <p class="text-gray-700 mb-8 indented-paragraph">
+                Spring Boot makes it easy to create stand-alone, production-grade Spring-based applications with minimal configuration. Here's an example of a simple Spring Boot application in Java.
+            </p>
+
+            <!-- Exemplu de cod -->
+            <div class="code-block">
+                <pre><code>
+// Main class for Spring Boot application
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}
+                </code></pre>
+            </div>
+
+            <!-- Explicații pe puncte -->
+            <ul id="code-explanation" class="list-disc pl-6 text-gray-700 mb-8">
+                <li><strong>@SpringBootApplication</strong> - This annotation enables auto-configuration and component scanning in the Spring Boot application.</li>
+                <li><strong>SpringApplication.run</strong> - Launches the Spring Boot application, starting the embedded server and initializing the Spring context.</li>
+                <li><strong>DemoApplication</strong> - The main entry point of the Spring Boot application.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2024 All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script pentru traduceri -->
+    <script>
+        const translations = {
+            en: {
+                backBtn: "Back",
+                contactBtn: "Contact",
+                registerBtn: "Register",
+                servicesTitle: "Java Development",
+                servicesIntro: "Learn about Java's role in web development and enterprise applications.",
+                servicesHeading: "Why Java for Web Development?",
+                frontendDesc: "Java is one of the most popular programming languages for web development due to its stability, scalability, and compatibility across platforms. Java powers large-scale enterprise applications, supporting complex business logic and a high number of transactions. With frameworks like Spring and Hibernate, developers can build secure and high-performing web applications that meet the needs of both small and large companies.",
+                frontendUsage: "Spring Boot makes it easy to create stand-alone, production-grade Spring-based applications with minimal configuration. Here's an example of a simple Spring Boot application in Java.",
+                codeExplanation: [
+                    "@SpringBootApplication - This annotation enables auto-configuration and component scanning in the Spring Boot application.",
+                    "SpringApplication.run - Launches the Spring Boot application, starting the embedded server and initializing the Spring context.",
+                    "DemoApplication - The main entry point of the Spring Boot application."
+                ]
+            },
+            ro: {
+                backBtn: "Înapoi",
+                contactBtn: "Contact",
+                registerBtn: "Înregistrare",
+                servicesTitle: "Dezvoltare Java",
+                servicesIntro: "Află despre rolul Java în dezvoltarea web și aplicațiile enterprise.",
+                servicesHeading: "De ce Java pentru Dezvoltarea Web?",
+                frontendDesc: "Java este unul dintre cele mai populare limbaje de programare pentru dezvoltarea web datorită stabilității, scalabilității și compatibilității sale pe diferite platforme. Java alimentează aplicațiile enterprise de mare anvergură, susținând logica de afaceri complexă și un număr mare de tranzacții. Cu framework-uri precum Spring și Hibernate, dezvoltatorii pot crea aplicații web sigure și performante care să răspundă nevoilor companiilor mici și mari.",
+                frontendUsage: "Spring Boot simplifică crearea de aplicații Spring standalone, gata de producție, cu o configurație minimă. Iată un exemplu de aplicație simplă Spring Boot în Java.",
+                codeExplanation: [
+                    "@SpringBootApplication - Această adnotare activează auto-configurarea și scanarea componentelor în aplicația Spring Boot.",
+                    "SpringApplication.run - Lansează aplicația Spring Boot, pornind serverul încorporat și inițializând contextul Spring.",
+                    "DemoApplication - Punctul principal de intrare al aplicației Spring Boot."
+                ]
+            }
+        };
+
+        const flags = document.querySelectorAll('.flag-icon');
+        flags.forEach(flag => {
+            flag.addEventListener('click', (e) => {
+                const lang = e.target.getAttribute('data-lang');
+                translatePage(lang);
+            });
+        });
+
+        function translatePage(lang) {
+            document.getElementById('back-btn').textContent = translations[lang].backBtn;
+            document.getElementById('contact-btn').textContent = translations[lang].contactBtn;
+            document.getElementById('register-btn').textContent = translations[lang].registerBtn;
+            document.getElementById('services-title').textContent = translations[lang].servicesTitle;
+            document.getElementById('services-intro').textContent = translations[lang].servicesIntro;
+            document.getElementById('services-heading').textContent = translations[lang].servicesHeading;
+            document.getElementById('frontend-desc').textContent = translations[lang].frontendDesc;
+            document.getElementById('frontend-usage').textContent = translations[lang].frontendUsage;
+            
+            const explanationList = document.getElementById('code-explanation');
+            explanationList.innerHTML = "";
+            translations[lang].codeExplanation.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                explanationList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>

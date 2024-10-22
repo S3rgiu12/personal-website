@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website for showcasing projects and skills.">
+    <meta name="keywords" content="Web Design, fullstack developer, portfolio, web development">
+    <meta name="author" content="Dumitrasc Sergiu-Emilian">
+    <title>Personal Website - Dumitrasc Sergiu-Emilian</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0c012b;
+            padding: 10px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .btn {
+            color: white;
+            text-decoration: none;
+        }
+
+        .language-selector {
+            display: flex;
+            align-items: center;
+        }
+
+        .flag-icon {
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        #project1-title {
+            margin-bottom: 15px; /* Spațiu între titlul proiectului și video */
+        }
+
+        .video-caption {
+            margin-top: 1.5px;
+            font-style: italic;
+        }
+
+        .video-fig {
+            margin-top: 1.5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bara de stare -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3m9gLXcc11oo3n4LZK3qZJrWbTMGbx5DoHA&s" alt="Logo" width="50">
+        </div>
+        <ul class="nav-links">
+            <li><a class="btn" href="services.html" id="services-btn">Services</a></li>
+            <li><a class="btn" href="contact.html" id="contact-btn">Contact</a></li>
+            <li><a class="btn" href="login.html" id="login-btn">Log in</a></li>
+            <li><a class="btn" href="register.html" id="register-btn">Register</a></li>
+        </ul>
+        <!-- Language selector in navbar -->
+        <div class="language-selector">
+            <img src="https://flagcdn.com/w20/gb.png" alt="English" class="flag-icon" data-lang="en">
+            <img src="https://flagcdn.com/w20/ro.png" alt="Romanian" class="flag-icon" data-lang="ro">
+        </div>
+    </nav>
+
+    <header>
+        <h1 id="welcome-text">Welcome on my personal website!</h1>
+        <p id="intro-text">Discover my projects and abilities of web development.</p>
+    </header>
+
+    <section id="projects">
+        <h2 id="projects-title">My projects</h2>
+        <ul>
+            <li id="project1-title">Project 1</li>
+            <!-- Video section with space above -->
+            <video src="Filmulet aplicatie web Sediul de Inchirieri Auto SergiuRent.mp4" width="500px" controls autoplay muted loop></video>
+            <p class="video-fig">Fig. 1.1</p>
+            <p class="video-caption" id="video-caption">Web application presentation video</p>
+            <li id="project2-title">Project 2</li>
+            <li id="project3-title">Project 3</li>
+        </ul>
+    </section>
+
+     <!-- Footer -->
+     <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2024 All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                welcomeText: "Welcome on my personal website!",
+                introText: "Discover my projects and abilities of web development.",
+                projectsTitle: "My projects",
+                project1Title: "Project 1",
+                project2Title: "Project 2",
+                project3Title: "Project 3",
+                services: "Services",
+                contact: "Contact",
+                login: "Log in",
+                register: "Register",
+                videoCaption: "Web application presentation video"
+            },
+            
+            ro: {
+                welcomeText: "Bine ai venit pe site-ul meu personal!",
+                introText: "Descoperă proiectele mele și abilitățile mele de dezvoltare web.",
+                projectsTitle: "Proiectele mele",
+                project1Title: "Proiectul 1",
+                project2Title: "Proiectul 2",
+                project3Title: "Proiectul 3",
+                services: "Servicii",
+                contact: "Contact",
+                login: "Autentificare",
+                register: "Înregistrare",
+                videoCaption: "Video prezentare aplicatie"
+            }
+        };
+
+        const flags = document.querySelectorAll('.flag-icon');
+        flags.forEach(flag => {
+            flag.addEventListener('click', (e) => {
+                const lang = e.target.getAttribute('data-lang');
+                translatePage(lang);
+            });
+        });
+
+        function translatePage(lang) {
+            document.getElementById('welcome-text').textContent = translations[lang].welcomeText;
+            document.getElementById('intro-text').textContent = translations[lang].introText;
+            document.getElementById('projects-title').textContent = translations[lang].projectsTitle;
+            document.getElementById('project1-title').textContent = translations[lang].project1Title;
+            document.getElementById('project2-title').textContent = translations[lang].project2Title;
+            document.getElementById('project3-title').textContent = translations[lang].project3Title;
+            document.getElementById('services-btn').textContent = translations[lang].services;
+            document.getElementById('contact-btn').textContent = translations[lang].contact;
+            document.getElementById('login-btn').textContent = translations[lang].login;
+            document.getElementById('register-btn').textContent = translations[lang].register;
+            document.getElementById('video-caption').textContent = translations[lang].videoCaption;
+        }
+    </script>
+</body>
+</html>
+
