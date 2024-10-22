@@ -33,7 +33,7 @@ This website is designed to showcase my skills, projects, and blog. It features 
     ```
 2. Open the `index.html` file in your browser:
     ```bash
-    open index.html
+    open website.html
     ```
 
 3. (If using a backend or need to serve it locally):
